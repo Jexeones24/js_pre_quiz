@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <body>
+    <form class="form" action="index.html" method="post">
+      <p>Add a Intrument</p>
+      <label>Instrument</label>
+      <input type="text" name="instrument[name]" id="instrument">
+      <label>Category</label>
+      <input type="text" name="instrument[category]" id="category">
+      <input type="submit" value="submit">
+    </form>
+
+    <h2>Categories</h2>
+    <div class="categories" id="category_section">
+
+    </div>
+
+<script src="index.js" charset="utf-8"></script>
+<script src="./models/category.js"></script>
+<script src="./models/instrument.js"></script>
+<script src="./controllers/category.controller.js"></script>
+<script src="./controllers/instrument.controller.js"></script>
+
+  </body>
+</html>
